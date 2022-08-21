@@ -11,19 +11,19 @@ public class RoadController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        TankInstantiate();
+        // TankInstantiate();
     }
 
     // Update is called once per frame
     void Update()
     {
-        time += Time.deltaTime;
+        //time += Time.deltaTime;
 
-        if (time > 5f)
-        {
-            time = 0f;
-            TankInstantiate();
-        }
+        //if (time > 5f)
+        //{
+        //    time = 0f;
+        //    TankInstantiate();
+        //}
     }
 
     void TankInstantiate()
@@ -34,7 +34,6 @@ public class RoadController : MonoBehaviour
             position.x = 5;
         else
             position.x = -5;
-        Debug.Log(position);
         Instantiate(tank, position, tank.transform.rotation);
     }
 }
